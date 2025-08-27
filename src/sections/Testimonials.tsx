@@ -164,34 +164,85 @@ import { Fragment } from "react";
 
 
 const testimonials = [
+  // {
+  //   name: "Rutvik",
+  //   text: "Working with Zeel felt effortless. He understood what we needed and turned it into something better than we imagined.",
+  //   avatar: memojiAvatar3,
+  // },
+  // {
+  //   name: "Pujan",
+  //   text: "Zeel has that rare mix of creativity and technical skills. He took our ideas and made them work beautifully in reality.",
+  //   avatar: myAvatar,
+  // },
+  // {
+  //   name: "Kunj",
+  //   text: "Whenever Zeel works on a project, you know it’s going to be reliable and well thought out. The results always speak for themselves.",
+  //   avatar: memojiAvatar1,
+  // },
+  // {
+  //   name: "Sakshi",
+  //   text: "Zeel turned our complex requirements into something simple and user-friendly. Everyone on our team loved the outcome.",
+  //   avatar: avatar3,
+  // },
+  // {
+  //   name: "nitiksha",
+  //   text: "What stands out about Zeel is not just his skills, but also the way he communicates. It made the whole process smooth and enjoyable.",
+  //   avatar: memojiAvatar4,
+  // },
+
+
+
   {
     name: "Rutvik",
-    text: "Working with Zeel felt effortless. He understood what we needed and turned it into something better than we imagined.",
+    text: "Working with Zeel is always chilled out. He’ll crack a joke in between debugging but still deliver a backend that never fails. Our system runs smoother because of his balance of humor and solid skills.",
     avatar: memojiAvatar3,
   },
   {
     name: "Pujan",
-    text: "Zeel has that rare mix of creativity and technical skills. He took our ideas and made them work beautifully in reality.",
+    text: "Zeel has this cool mix of creativity and logic. We gave him half-baked ideas and he turned them into something real, scalable, and actually fun to use. He makes tech feel less stressful.",
     avatar: myAvatar,
   },
   {
     name: "Kunj",
-    text: "Whenever Zeel works on a project, you know it’s going to be reliable and well thought out. The results always speak for themselves.",
+    text: "One thing about Zeel—you know the project is safe in his hands. He thinks through everything from database design to deployment. Plus, he keeps the vibe light even when things get intense.",
     avatar: memojiAvatar1,
   },
   {
     name: "Sakshi",
-    text: "Zeel turned our complex requirements into something simple and user-friendly. Everyone on our team loved the outcome.",
+    text: "Zeel took our complex requirements and broke them down like it was nothing. The final result was so simple to use that even the non-techies on our team loved it.",
     avatar: avatar3,
   },
   {
-    name: "nitiksha",
-    text: "What stands out about Zeel is not just his skills, but also the way he communicates. It made the whole process smooth and enjoyable.",
+    name: "Nitiksha",
+    text: "What stands out about Zeel is how he communicates. Even when he’s explaining AI or ML stuff, he’ll make it sound simple and add a little humor so you don’t feel lost.",
     avatar: memojiAvatar4,
   },
+  {
+    name: "Rohan",
+    text: "I honestly thought setting up CI/CD would be a headache, but Zeel had it running in no time. The best part? He explained the process with memes, so we actually remembered it.",
+    avatar: avatar2,
+  },
+  {
+    name: "Mansi",
+    text: "Zeel doesn’t just code—he adds personality to his work. The small touches he brings, whether in backend logic or an AI feature, make the project feel alive and user-friendly.",
+    avatar: memojiAvatar2,
+  },
+  {
+    name: "Dev",
+    text: "What I liked most was how Zeel thinks beyond the code. He made sure the backend was secure, scalable, and future-proof. At the same time, he kept things fun and easy for the team.",
+    avatar: avatar4,
+  },
+  {
+    name: "Priya",
+    text: "Zeel handled our DevOps setup so smoothly that we didn’t even realize when half the manual work disappeared. He makes collaboration stress-free and honestly fun.",
+    avatar: memojiAvatar5,
+  },
+  {
+    name: "Ankit",
+    text: "Working with Zeel feels less like ‘just business’ and more like teaming up with a friend who actually knows his stuff. His combo of backend, DevOps, and AI skills is rare—and he makes the journey enjoyable.",
+    avatar: memojiAvatar4,
+  }
 ];
-
-
 
 
 export const TestimonialsSection = () => {
