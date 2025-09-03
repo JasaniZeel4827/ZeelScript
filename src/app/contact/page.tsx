@@ -157,8 +157,8 @@ export default function ContactPage() {
               description="Have a project in mind or want to chat? Feel free to reach out."
             />
             
-            <div className="mt-12 max-w-2xl mx-auto">
-              <Card className="relative pt-10 px-8 pb-8">
+            <div className="mt-12 max-w-2xl mx-auto px-2 sm:px-0">
+              <Card className="relative pt-10 px-4 sm:px-8 pb-8">
                 <WindowControls />
                 <CardHeader 
                   title="Contact Information" 
@@ -166,8 +166,8 @@ export default function ContactPage() {
                 />
                 <div className="mt-8 space-y-4">
                   {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 hover:bg-white/5 rounded-lg transition-colors group">
-                      <div className="flex items-center gap-4">
+                    <div key={index} className="flex items-center justify-between p-3 sm:p-4 hover:bg-white/5 rounded-lg transition-colors group">
+                      <div className="flex items-center gap-3 sm:gap-4 min-w-0">
                         <div className="bg-emerald-400/10 p-2 rounded-lg">
                           {info.icon}
                         </div>
@@ -176,18 +176,18 @@ export default function ContactPage() {
                             href={info.href} 
                             target={info.target || '_self'}
                             rel="noopener noreferrer"
-                            className="text-emerald-400 hover:underline text-lg"
+                            className="text-emerald-400 hover:underline text-base sm:text-lg truncate"
                           >
                             {info.value}
                           </a>
                         ) : (
-                          <span className="text-white text-lg">{info.value}</span>
+                          <span className="text-white text-base sm:text-lg truncate">{info.value}</span>
                         )}
                       </div>
                       {info.copyable && (
                         <button
                           onClick={() => handleCopy(info.value, info.type)}
-                          className="p-2 text-gray-400 hover:text-emerald-400 transition-colors"
+                          className="p-2 text-gray-400 hover:text-emerald-400 transition-colors flex-shrink-0"
                           aria-label={`Copy ${info.type}`}
                           title="Copy to clipboard"
                         >

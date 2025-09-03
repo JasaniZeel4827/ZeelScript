@@ -19,7 +19,7 @@
 
 @layer utilities {
     .container {
-        @apply lg:max-w-5xl;
+        @apply px-4 sm:px-6 lg:px-8 lg:max-w-5xl;
     }
 }
 

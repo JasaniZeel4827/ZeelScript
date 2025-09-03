@@ -252,7 +252,7 @@ export default function ProjectsPage() {
               description="A collection of my recent work and side projects. Each project was built to solve real-world problems and improve my skills."
             />
 
-            <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <div className="mt-12 grid gap-6 sm:gap-8 md:grid-cols-2">
               {portfolioProjects.map((project, index) => (
                 <Card key={index} className="group hover:border-emerald-400/50 transition-colors h-full flex flex-col">
                   {/* macOS-style header */}
@@ -269,7 +269,7 @@ export default function ProjectsPage() {
                   
                   {/* Project content */}
                   <div className="flex-1 flex flex-col">
-                    <div className="relative h-48 overflow-hidden">
+                    <div className="relative h-40 sm:h-48 overflow-hidden">
                       <Image
                         src={project.image}
                         alt={project.title}
@@ -279,8 +279,8 @@ export default function ProjectsPage() {
                       />
                     </div>
 
-                    <div className="p-6 flex-1 flex flex-col">
-                      <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+                    <div className="p-4 sm:p-6 flex-1 flex flex-col">
+                      <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{project.title}</h3>
                       <p className="text-white/70 mb-4">{project.results[0].title}</p>
 
                       <div className="flex flex-wrap gap-2 mb-6 mt-auto">
@@ -294,7 +294,7 @@ export default function ProjectsPage() {
                       <div className="flex items-center pt-4 border-t border-white/5">
                         <a
                           href={project.link}
-                          className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors px-4 py-2 bg-white/5 rounded-lg hover:bg-white/10"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 rounded-lg hover:bg-white/10"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

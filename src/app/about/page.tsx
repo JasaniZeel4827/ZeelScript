@@ -89,6 +89,7 @@ import { CardHeader } from '@/components/CardHeader';
 import grainImage from '@/assets/images/grain.jpg';
 import myAvatar from '@/assets/images/my-avatar.png';
 import Image from 'next/image';
+import { Download } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -109,7 +110,7 @@ export default function AboutPage() {
                 <WindowControls />
                 <div className="space-y-8">
                   <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-emerald-400/30 flex-shrink-0 relative">
+                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-emerald-400/30 flex-shrink-0 relative">
                       <div className="w-full h-full bg-gradient-to-br from-emerald-400/20 to-transparent">
                         <Image 
                           src={myAvatar} 
@@ -125,6 +126,16 @@ export default function AboutPage() {
                       <p className="text-white/80">
                         Software Developer. Problem Solver. Technology Enthusiast.
                       </p>
+                      <div className="mt-6 flex flex-col sm:flex-row items-center gap-3">
+                        <a
+                          href="/resume.pdf"
+                          download
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500 text-black font-semibold hover:bg-emerald-400 transition-colors w-full sm:w-auto justify-center"
+                        >
+                          <Download className="w-4 h-4" />
+                          Download Resume
+                        </a>
+                      </div>
                     </div>
                   </div>
 
