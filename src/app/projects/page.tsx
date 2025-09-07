@@ -449,6 +449,7 @@ import masterjiLMSMobile from "@/assets/images/masterjiLMSMobile.png";
 import masterjistream from "@/assets/images/masterjistream.png";
 import gta6 from "@/assets/images/gta6.png";
 import Image from 'next/image';
+import githubpro from '@/assets/images/githubpro.png';
 
 // const projects = [
 // {
@@ -569,7 +570,7 @@ const portfolioProjects = [
       { title: "Recent searches, beautiful UI with shadcn/ui and charts" },
     ],
     link: "https://github.com/JasaniZeel4827/git-hub-profile-analyzer",
-    image: aiStartupLandingPage,
+    image: githubpro,
     technologies: [
       "Next.js",
       "TypeScript",
