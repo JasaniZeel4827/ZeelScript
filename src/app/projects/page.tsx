@@ -520,26 +520,7 @@ import Image from 'next/image';
 // },
 
 const portfolioProjects = [
-  {
-    company: "Personal",
-    year: "2025",
-    title: "GitHub Profile Finder & Analyzer",
-    results: [
-      { title: "Search GitHub users and display profile details" },
-      { title: "Analytics: total stars, language distribution, top repos, account age" },
-      { title: "Recent searches, beautiful UI with shadcn/ui and charts" },
-    ],
-    link: "https://github.com/JasaniZeel4827/github-profile-finder",
-    image: aiStartupLandingPage,
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "shadcn/ui",
-      "Radix UI",
-      "Recharts",
-    ],
-  },
+  
   {
     company: "Masterji",
     year: "2024",
@@ -549,7 +530,7 @@ const portfolioProjects = [
       { title: "Improved user experience with responsive design" },
       { title: "Integrated secure file management with AWS S3" },
     ],
-    link: "https://github.com/JasaniZeel4827/masterjiLMS",
+    link: "https://github.com/JasaniZeel4827/masterji",
     image: masterjiLMS,
     technologies: ["Next.js", "TypeScript", "Prisma", "TailwindCSS", "AWS S3", "Clerk"],
   },
@@ -577,6 +558,26 @@ const portfolioProjects = [
     link: "https://github.com/JasaniZeel4827/brainwave", 
     image: gta6, 
     technologies: ["React", "Vite", "GSAP", "TailwindCSS"],
+  },
+  {
+    company: "Profile Finder & Analyzer",
+    year: "2025",
+    title: "GitHub Profile Finder & Analyzer",
+    results: [
+      { title: "Search GitHub users and display profile details" },
+      { title: "Analytics: total stars, language distribution, top repos, account age" },
+      { title: "Recent searches, beautiful UI with shadcn/ui and charts" },
+    ],
+    link: "https://github.com/JasaniZeel4827/git-hub-profile-analyzer",
+    image: aiStartupLandingPage,
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "shadcn/ui",
+      "Radix UI",
+      "Recharts",
+    ],
   },
 ];
 

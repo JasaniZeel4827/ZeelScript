@@ -384,6 +384,7 @@ import masterjiLMS from "@/assets/images/masterjiLMS.png";
 import masterjiLMSMobile from "@/assets/images/masterjiLMSMobile.png";
 import masterjistream from "@/assets/images/masterjistream.png";
 import gta6 from "@/assets/images/gta6.png";
+import zyora from "@/assets/images/zyora.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -401,7 +402,8 @@ const portfolioProjects = [
       { title: "Improved user experience with responsive design" },
       { title: "Integrated secure file management with AWS S3" },
     ],
-    link: "https://github.com/JasaniZeel4827/masterjiLMS", // Replace with live demo / video
+    live: "https://github.com/JasaniZeel4827/masterjiLMS",
+    github: "https://github.com/JasaniZeel4827/masterjiLMS",
     image: masterjiLMS,
   },
   {
@@ -413,20 +415,22 @@ const portfolioProjects = [
       { title: "Enabled real-time chat, scheduling & responsive UI" },
       { title: "Added premium features: recording, screen sharing, AI summaries" },
     ],
-    link: "https://github.com/JasaniZeel4827/sassforMasterji", // Replace with Masterji Stream demo
+    live: "https://github.com/JasaniZeel4827/sassforMasterji",
+    github: "https://github.com/JasaniZeel4827/sassforMasterji",
     image: masterjistream,
   },
   {
-    company: "Rockstar Inspired",
+    company: "Zyora",
     year: "2025",
-    title: "GTA-6 Landing Page",
+    title: "3D Interactive Book",
     results: [
-      { title: "Created high-impact animated intro with GSAP timelines" },
-      { title: "Implemented parallax hero with mouse driven effects" },
-      { title: "Delivered smooth character reveal & optimized asset loading" },
+      { title: "Realistic 3D book with dynamic lighting and shadows" },
+      { title: "Smooth page turning with physics-based animations" },
+      { title: "Orbit controls, hover effects, fully responsive design" },
     ],
-    link: "https://gta-6-landing-page-psi.vercel.app/", // Replace with GTA-6 project live/demo link
-    image: gta6, // Import project image
+    live: "https://zyora-amber.vercel.app/",
+    github: "https://github.com/JasaniZeel4827/Zyora",
+    image: zyora,
   },
 ];
 
@@ -472,21 +476,21 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col sm:flex-row gap-6 mt-8">
-                    <a href={project.link} className="w-full sm:w-auto">
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 transition-colors">
-                        <span>View</span>
+                    <a href={project.live ? project.live : '#'} className={`w-full sm:w-auto ${!project.live ? 'opacity-50 cursor-not-allowed' : ''}`} target={project.live ? '_blank' : undefined} rel={project.live ? 'noopener noreferrer' : undefined}>
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 transition-colors" disabled={!project.live}>
+                        <span>Live</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
                     </a>
                     <a 
-                      href={project.link.includes('github.com') ? project.link : '#'} 
-                      className={`w-full sm:w-auto ${!project.link.includes('github.com') ? 'opacity-50 cursor-not-allowed' : ''}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={project.github ? project.github : '#'} 
+                      className={`w-full sm:w-auto ${!project.github ? 'opacity-50 cursor-not-allowed' : ''}`}
+                      target={project.github ? '_blank' : undefined}
+                      rel={project.github ? 'noopener noreferrer' : undefined}
                     >
                       <button 
                         className="h-12 w-full px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white transition-colors border border-gray-700"
-                        disabled={!project.link.includes('github.com')}
+                        disabled={!project.github}
                       >
                         <span>GitHub</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
