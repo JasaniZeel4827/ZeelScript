@@ -402,8 +402,8 @@ const portfolioProjects = [
       { title: "Improved user experience with responsive design" },
       { title: "Integrated secure file management with AWS S3" },
     ],
-    live: "https://github.com/JasaniZeel4827/masterjiLMS",
-    github: "https://github.com/JasaniZeel4827/masterjiLMS",
+    live: "https://github.com/JasaniZeel4827/masterji",
+    github: "https://github.com/JasaniZeel4827/masterji",
     image: masterjiLMS,
   },
   {
