@@ -71,7 +71,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "Zeel Jasani | Portfolio",
-  description: "Portfolio of Zeel Jasani - Web Developer",
+  description: "Zeel Jasani - Software Developer",
 };
 
 export default function RootLayout({
