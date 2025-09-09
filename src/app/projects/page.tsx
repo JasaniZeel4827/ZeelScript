@@ -266,7 +266,7 @@
 //                       {project.company}
 //                     </div>
 //                   </div>
-                  
+
 //                   {/* Project content */}
 //                   <div className="flex-1 flex flex-col">
 //                     <div className="relative h-40 sm:h-48 overflow-hidden">
@@ -521,7 +521,7 @@ import githubpro from '@/assets/images/githubpro.png';
 // },
 
 const portfolioProjects = [
-  
+
   {
     company: "Masterji",
     year: "2024",
@@ -548,17 +548,17 @@ const portfolioProjects = [
     technologies: ["WebRTC", "Socket.io", "React", "Node.js", "MongoDB"],
   },
   {
-    company: "Rockstar Inspired",
-    year: "2025",
-    title: "GTA-6 Landing Page",
-    results: [
-      { title: "Created high-impact animated intro with GSAP timelines" },
-      { title: "Implemented parallax hero with mouse-driven effects" },
-      { title: "Delivered smooth character reveal & optimized asset loading" },
+    "company": "DeltaBoard",
+    "year": "2025",
+    "title": "Travel Agency Platform",
+    "results": [
+      { "title": "Built an AI-powered trip itinerary generator" },
+      { "title": "Developed an admin dashboard for trip and user management" },
+      { "title": "Implemented secure user authentication and data management" }
     ],
-    link: "https://github.com/JasaniZeel4827/brainwave", 
-    image: gta6, 
-    technologies: ["React", "Vite", "GSAP", "TailwindCSS"],
+    "link": "https://github.com/adrianhajdin/travel-agency-dashboard",
+    "image": "travelAgency, // Replace with your image variable",
+    "technologies": ["React", "Appwrite", "Syncfusion", "Tailwind CSS", "Vite"]
   },
   {
     company: "Profile Finder & Analyzer",
@@ -610,7 +610,7 @@ export default function ProjectsPage() {
                       {project.company}
                     </div>
                   </div>
-                  
+
                   {/* Project content */}
                   <div className="flex-1 flex flex-col">
                     <div className="relative h-40 sm:h-48 overflow-hidden">
