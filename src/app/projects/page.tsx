@@ -556,7 +556,7 @@ const portfolioProjects = [
       { "title": "Developed an admin dashboard for trip and user management" },
       { "title": "Implemented secure user authentication and data management" }
     ],
-    "link": "https://github.com/adrianhajdin/travel-agency-dashboard",
+    "link": "https://github.com/JasaniZeel4827",
     "image": "travelAgency, // Replace with your image variable",
     "technologies": ["React", "Appwrite", "Syncfusion", "Tailwind CSS", "Vite"]
   },
