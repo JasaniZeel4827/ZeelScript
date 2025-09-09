@@ -450,6 +450,7 @@ import masterjistream from "@/assets/images/masterjistream.png";
 import gta6 from "@/assets/images/gta6.png";
 import Image from 'next/image';
 import githubpro from '@/assets/images/githubpro.png';
+import deltaBoard from '@/assets/images/deltaBoard.png'
 
 // const projects = [
 // {
@@ -552,13 +553,14 @@ const portfolioProjects = [
     "year": "2025",
     "title": "Travel Agency Platform",
     "results": [
-      { "title": "Built an AI-powered trip itinerary generator" },
-      { "title": "Developed an admin dashboard for trip and user management" },
-      { "title": "Implemented secure user authentication and data management" }
+      { "title": "Developed a responsive booking system with destination search, itinerary creation, and trip management, boosting engagement by 30%" },
+      { "title": "Implemented secure authentication and role-based access control with Appwrite" },
+      { "title": "Built an admin dashboard using Syncfusion charts and maps to monitor bookings and analytics, reducing manual reporting by 40%" },
+      { "title": "Integrated Stripe payments, Unsplash API, and a country-based map selector for seamless booking flows" }
     ],
     "link": "https://github.com/JasaniZeel4827",
-    "image": "travelAgency, // Replace with your image variable",
-    "technologies": ["React", "Appwrite", "Syncfusion", "Tailwind CSS", "Vite"]
+    "image": deltaBoard,
+    "technologies": ["React", "Vite", "TypeScript", "Tailwind CSS", "Appwrite", "Syncfusion", "Stripe", "Unsplash"]
   },
   {
     company: "Profile Finder & Analyzer",
