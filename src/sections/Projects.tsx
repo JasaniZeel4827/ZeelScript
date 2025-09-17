@@ -440,10 +440,12 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Real-world Results"
-          title="Featured Projects"
-          description="See how I transformed concepts into engaging digital experiences"
+          eyebrow="Projects"
+          title="Projects that Put People First"
+          description="A curated set of products I’ve designed, built, and shipped — focused on real impact."
         />
+
+
 
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project, projectIndex) => (
@@ -482,13 +484,13 @@ export const ProjectsSection = () => {
                         <ArrowUpRightIcon className="size-4" />
                       </button>
                     </a>
-                    <a 
-                      href={project.github ? project.github : '#'} 
+                    <a
+                      href={project.github ? project.github : '#'}
                       className={`w-full sm:w-auto ${!project.github ? 'opacity-50 cursor-not-allowed' : ''}`}
                       target={project.github ? '_blank' : undefined}
                       rel={project.github ? 'noopener noreferrer' : undefined}
                     >
-                      <button 
+                      <button
                         className="h-12 w-full px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white transition-colors border border-gray-700"
                         disabled={!project.github}
                       >

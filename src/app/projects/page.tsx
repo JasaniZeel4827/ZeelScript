@@ -594,7 +594,7 @@ export default function ProjectsPage() {
           <div className="container px-4 mx-auto">
             <SectionHeader
               eyebrow="My Work"
-              title="Featured Projects"
+              title="Projects"
               description="A collection of my recent work and side projects. Each project was built to solve real-world problems and improve my skills."
             />
 
